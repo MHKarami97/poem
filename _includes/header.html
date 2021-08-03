@@ -1,6 +1,6 @@
     <header>
         <nav class="navbar navbar-tiffany rectangle" role="navigation">
-            <div class="container">
+            <div class="container" style="direction: rtl;">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -11,12 +11,7 @@
                     <!-- <p class="navbar-text">{{ site.description }}</p> -->
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        {% if page.url == "/index.html" %}
-                        <li class="active">{% else %}
-                        <li>{% endif %}
-                        <a href="https://mhkarami97.ir/#blog" class="word-keep"><span class="octicon octicon-book"></span></span>&nbsp;&nbsp; دیگر سایت ها</a>
-                        </li>
+                    <ul class="nav navbar-nav navbar-right">                    
                         {% for p in site.pages %}{% if p.isNavItem %}
                         {% if p.url == page.url %}
                         <li class="active">{% else %}
@@ -25,6 +20,11 @@
                         </li>
                         {% endif %}
                         {% endfor %}
+                        {% if page.url == "/index.html" %}
+                        <li class="active">{% else %}
+                        <li>{% endif %}
+                        <a href="https://mhkarami97.ir/#blog" class="word-keep"><span class="octicon octicon-book"></span></span>&nbsp;&nbsp; دیگر سایت ها</a>
+                        </li>
                     </ul>
                 </div>
             </div>
