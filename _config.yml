@@ -8,12 +8,9 @@ kramdown:
   input:  GFM
   syntax_highlighter: rouge
 
-
 paginate: 30
 paginate_path: "page/:num"
-baseurl: ""
-
-
+baseurl: "/"
 
 defaults:
   -
@@ -24,8 +21,6 @@ defaults:
       layout: post
       styles : [highlight.css,gitment.css,post.css]
       scripts : [gitment.js, post.js]
-
-
 
 title: "شعر خانه"
 email: mhkaram97@gmail.com
@@ -42,3 +37,9 @@ github:
 url: "https://poem.mhkarami97.ir"
 imgrepo: "https://poem.mhkarami97.ir/static/img"
 
+google_analytics: "G-DZM25ZLKRP"
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-DZM25ZLKRP"
+    anonymize_ip: false # default
