@@ -8,7 +8,7 @@ kramdown:
   input:  GFM
   syntax_highlighter: rouge
 
-paginate: 30
+paginate: 50
 paginate_path: "page/:num"
 baseurl: "/"
 
@@ -25,10 +25,13 @@ defaults:
 title: "شعر خانه"
 email: mhkaram97@gmail.com
 description: "محفل شعر"
+
 github:
   username: mhkarami97
+
 swiftype:
-  searchId: 3cGh6TzuZUfyZMsybLKx
+  searchId: "3cGh6TzuZUfyZMsybLKx"
+
 # gitment:
 #     repo: blog
 #     client_id: a6fb73b3e790e234bab8
