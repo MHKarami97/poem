@@ -10,9 +10,6 @@ layout: default
           {% for post in paginator.posts %}
             <article>
                 <div class="module">
-                  <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-                      {{ post.title }}
-                  </a>
                   <p>{% if post.excerpt.size > 32 %}{{ post.excerpt }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 160 }}{% endif %}</p>
                   <!-- <a class="readmore" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">بیشتر</a> -->
                   <footer>
